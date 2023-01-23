@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font family link -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              yellow: '#FECC02',
+              grAy: '#4E4E4E',
+              black: '#131313',
+              white: '#FFFFFF',
+            },
+            // adding font family in custom css
+            fontFamily: {
+              bebas: ['Bebas Neue', 'cursive'],
+              montserrat: ['Montserrat', 'sans-serif'],
+            },
+          },
+        },
+      }
+    </script>
+    <title>tailwind project</title>
+  </head>
+  <body>
+    <!-- here we gave width in pixel by using w-[500px] we can set any pixel this way ..this is called arbitary value
+    <h1
+      class="text-yellow  text-3xl bg-orange-600 m-10 w-[500px] text-center py-3"
+    >
+      hellow world
+    </h1> -->
+    <!-- nav bar -->
+    <nav class="h-20 fixed top-0 right-0 left-0">
+      <!-- here we again used height 20 to set the div height equal to nav height which we gave height 20 -->
+      <div
+        class="flex justify-between items-center font-bebas h-20 w-full max-w-7xl mx-auto px-5"
+      >
+        <h1 class="text-3xl">jhaka naka production</h1>
+        <ul class="flex uppercase gap-5 text-lg">
+          <li>about us</li>
+          <li>our movies</li>
+          <li>services</li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- main header img section -->
+    <section></section>
+  </body>
+</html>
